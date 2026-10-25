@@ -27,6 +27,9 @@
         "laravel": {
             "providers": ["Atannex\\Ecosystem\\EcosystemServiceProvider"],
             "aliases": { "Search": "Atannex\\Ecosystem\\Facades\\Search" }
+        },
+        "branch-alias": {
+            "dev-main": "1.x-dev"
         }
     },
     "scripts": { "test": "phpunit" },
