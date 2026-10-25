@@ -1,0 +1,36 @@
+{
+    "name": "atannex/ecosystem",
+    "description": "Deep, ranked search for Laravel Eloquent: any relation depth, JSON paths, search syntax (phrases, exclusions, field filters, ranges), global multi-model search and highlighting, with no search server.",
+    "keywords": ["laravel", "eloquent", "search", "deep-search", "relevance", "full-text", "global-search"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        { "name": "Atanga Leke Collins", "email": "atangageihlekecollins@gmail.com" }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": { "Atannex\\Ecosystem\\": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Atannex\\Ecosystem\\Tests\\": "tests/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Atannex\\Ecosystem\\EcosystemServiceProvider"],
+            "aliases": { "Search": "Atannex\\Ecosystem\\Facades\\Search" }
+        }
+    },
+    "scripts": { "test": "phpunit" },
+    "config": { "sort-packages": true },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
