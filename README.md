@@ -7,11 +7,3 @@ Adds search to Laravel models without a separate search server. You say which co
 ```bash
 composer require atannex/ecosystem
 ```
-
-## Documentation
-
-The full guide is in [docs/README.md](docs/README.md).
-
-## License
-
-MIT.
